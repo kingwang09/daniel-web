@@ -5,35 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-Hello world!
-<div id="grid"></div>
-
-<link rel="stylesheet" href="https://uicdn.toast.com/grid/latest/tui-grid.css" />
-<script src="https://uicdn.toast.com/grid/latest/tui-grid.js"></script>
-<script src="./src/config.js"></script>
-<script>
-    const grid = new tui.Grid({
-        el: document.getElementById('grid'),
-        data: {
-            api: {
-                readData: { url: config.elastic.url, method: config.elastic.method }
-            }
-        },
-        columns: [
-            {
-                header: '아이디',
-                name: 'id'
-            },
-            {
-                header: '이름',
-                name: 'name'
-            },
-            {
-                header: '값',
-                name: 'value'
-            }
-        ]
-    });
-</script>
+Front-End: Toast-UI를 활용
+<ul>
+    <li><a href="./toast-ui/grid/index.html">Grid</a></li>
+    <li><a href="./toast-ui/chart/index.html">Chart</a></li>
+    <li><a href="./toast-ui/text-editor/index.html">Text-Editor</a></li>
+</ul>
 </body>
 </html>
